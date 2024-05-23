@@ -40,10 +40,10 @@ function showGreenToast(r) {
     timeout: 5000,
     titleColor: '#fff',
     titleSize: '16px',
-    iconUrl: '/ok-icon.svg',
+    iconUrl: './img/ok-icon.svg',
     buttons: [
       [
-        '<button style="background: transparent; padding: 0; margin-left: 30px" width="20" height="20"><img src="/cross.svg"></button>',
+        '<button style="background: transparent; padding: 0; margin-left: 30px" width="20" height="20"><img src="./img/cross.svg"></button>',
         function (instance, toast) {
           instance.hide(
             {
@@ -66,10 +66,10 @@ function showRedToast(e) {
     timeout: 5000,
     titleColor: '#fff',
     titleSize: '16px',
-    iconUrl: '/cross-icon.svg',
+    iconUrl: './img/cross-icon.svg',
     buttons: [
       [
-        '<button style="background: transparent; padding: 0; margin-left: 30px" width="20" height="20"><img src="/cross.svg"></button>',
+        '<button style="background: transparent; padding: 0; margin-left: 30px" width="20" height="20"><img src="./img/cross.svg"></button>',
         function (instance, toast) {
           instance.hide(
             {

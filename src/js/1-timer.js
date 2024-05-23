@@ -32,9 +32,9 @@ const options = {
                 timeout: 5000,
                 titleColor: '#fff',
                 titleSize: '16px',
-                iconUrl: '/cross-icon.svg',
+                iconUrl: './img/cross-icon.svg',
                 buttons: [
-                    ['<button style="background: transparent; padding: 0; margin-left: 30px" width="20" height="20"><img src="/cross.svg"></button>', function (instance, toast) {
+                    ['<button style="background: transparent; padding: 0; margin-left: 30px" width="20" height="20"><img src="./img/cross.svg"></button>', function (instance, toast) {
                         instance.hide({
                             transitionOut: 'fadeOutUp',
                         }, toast, 'buttonName');
