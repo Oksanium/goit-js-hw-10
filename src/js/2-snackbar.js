@@ -2,6 +2,9 @@
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import errIcon from '../img/cross-icon.svg';
+import okIcon from '../img/ok-icon.svg';
+import closeIcon from '../img/cross.svg'
 
 const radioS = document.querySelectorAll('input[type="radio"]');
 const form = document.querySelector('.form');
@@ -40,10 +43,10 @@ function showGreenToast(r) {
     timeout: 5000,
     titleColor: '#fff',
     titleSize: '16px',
-    iconUrl: '/img/ok-icon.svg',
+    iconUrl: okIcon,
     buttons: [
       [
-        '<button style="background: transparent; padding: 0; margin-left: 30px" width="20" height="20"><img src="/img/cross.svg"></button>',
+        `<button style="background: transparent; padding: 0; margin-left: 30px" width="20" height="20"><img src=${closeIcon}></button>`,
         function (instance, toast) {
           instance.hide(
             {
@@ -66,10 +69,10 @@ function showRedToast(e) {
     timeout: 5000,
     titleColor: '#fff',
     titleSize: '16px',
-    iconUrl: '/img/cross-icon.svg',
+    iconUrl: errIcon,
     buttons: [
       [
-        '<button style="background: transparent; padding: 0; margin-left: 30px" width="20" height="20"><img src="/img/cross.svg"></button>',
+        `<button style="background: transparent; padding: 0; margin-left: 30px" width="20" height="20"><img src=${closeIcon}></button>`,
         function (instance, toast) {
           instance.hide(
             {
