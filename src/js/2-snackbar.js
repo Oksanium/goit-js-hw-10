@@ -4,7 +4,7 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import errIcon from '../img/cross-icon.svg';
 import okIcon from '../img/ok-icon.svg';
-import closeIcon from '../img/cross.svg'
+import closeIcon from '../img/cross.svg';
 
 const radioS = document.querySelectorAll('input[type="radio"]');
 const form = document.querySelector('.form');
